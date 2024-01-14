@@ -1,62 +1,113 @@
 <html>
-<head> <title> Register </title>  </head>
+<head>
+<title>AI&DS-C TimeTable</title>
 <style>
-body{background: linear-gradient(orange,white,green);}
+table,th,tr{
+	border-collapse:collapse;}
+	td,th{
+		text-align: center;
+	}
+#time{
+	color: blue;
+}
+#day
+{
+	color: black;
+}
 </style>
+</head>
+
 <body>
-<h1> REGISTER </h1>
-<form> 
-
-<label for="fname">Name:</label> <br>
-<input type = "text" id = "fname"Name = "fname"placeholder = "Enter your Name"><br><br>
-
-<label for="dob">DOB:</label><br>
-<input type = "date" id = "dob" name ="dob" required/><br><br>
-
-<label for="email">Enter your Email: </label><br>
-<input id="email" name="email" type="email"placeholder = "abc@gmail.com" required/><br><br>
-<label for="Phone no">Enter your phone no: </label><br>
-<input id="tel" name="phone no" type="phone no"placeholder = "+91" required/><br><br>
-<label for="password">Enter your Password: </label><br>
-<input id="password" name="password" type="password" placeholder = "Enter your Password" required/><br><br>
-<label for="confirm password">Re-enter your Password: </label><br>
-<input id="password" name="password" type="password"placeholder = "re-enter your Password " required/><br><br>
-<label for="Address">Address:</label><br>
-<textarea  id = "msg" id = "address" name ="address" rows = "3", cols = "20" placeholder = "1\a summerstreet,ocktown,New jersey" required></textarea><br>
-
-<h4>GENDER: </h4>
-<input type="radio" id = "male" name = "gender"  checked/></label>
-<label  for ="male">Male</label><br>
-<input type="radio" id = "female" name = "gender" ></label>
-<label  for ="Gender">Female</label><br>
-<input type="radio" id = "other" name = "gender" ></label>
-<label  for ="Gender">Other</label><br>
-
-<label for = "profile-picture">Upload a profile picture:
-<input id ="Profile-picture" type="file" name ="file" />
-</label><br><br>
-
-<label for= "nation">Enter your nationality (native)
-<select id="state" name="state"
-<option value = "">(select one)</option>
-<option value = "1">India</option>
-<option value = "2">American</option>
-<option value = "3">Africa</option>
-<option value = "4">Austrila</option>
-<option value = "5">Sri Lankan</option>
-</select><br><br>
-
-<h4>COURSE: </h4>
-<input type="checkbox" id = "vehicle1" name = "course1"  required></label>
-<label  for ="course1">MODE</label><br>
-<input type="checkbox" id = "vehicle2" name = "course2"  required></label>
-<label  for ="course2">EIT</label><br>
-<input type="checkbox" id = "vehicle3" name = "course3"  required></label>
-<label  for ="course3">PHY</label><br><br>
+	<p style="font-family:ariel">
+<table border="1">
 
 
-<input type="submit" value ="submit"/>
+<tr id="time">
+<th bgcolor="blue" id="day"> Days </th>
+<th bgcolor="lightgreen"> I<BR>8.45-9.40</th>
+<th bgcolor="lightgreen"> II<BR>9.40-10.25</th>
+<th bgcolor="lightgreen" > 10.25-10.45</th>
+<th bgcolor="lightgreen"> III<BR>10.45-11.30</th>
+<th bgcolor="lightgreen"> IV<BR>11.30-12.15 </th>
+<th bgcolor="lightgreen"> 12.15-1.15</th>
+<th bgcolor="lightgreen"> V<BR>1.15-2.00 </th>
+<th bgcolor="lightgreen"> VI<BR>2.00-2.45 </th>
+<th bgcolor="lightgreen"> 2.45-3.00</th>
+<th bgcolor="lightgreen"> VII<BR>3.00-3.45 </th>
+<th bgcolor="lightgreen"> VIII<BR>3.45-4.30 </th>
+</tr>
 
-</form>
+<tr>
+<th bgcolor="brown"> Monday </th>
+<td colspan="2">CP</td>
+<td bgcolor="orange"rowspan="6"><B>BREAK</B></td></td>
+<td colspan="2">EIT</td>
+<td bgcolor="orange"rowspan="6"><b>LUNCH</b></td>
+<td> PHY </td>
+<td> CP</td>
+<td bgcolor="orange"rowspan="6"><B>BREAK</B></td></td>
+<td> CS-I</td>
+<td> MODE</td>
+</tr>
+
+<tr>
+<th bgcolor="brown"> Tuesday </th>
+<td> EIT</td>
+<td> CP</td>
+<td> LIB</td>
+<td> MODE </td>
+<td>CS-I</td>
+<td> PHY</td>
+<td colspan="2">PHY LAB</td>
+</tr>
+
+<tr>
+<th bgcolor="brown"> Wednesday </th>
+<td> PHY</td>
+<td> LIB</td>
+<td> EIT</td>
+<td> CP</td>
+<td> LIB </td>
+<td> PHY</td>
+<td> MODE</td>
+<td> CS-I</td>
+</tr>
+
+<tr>
+<th bgcolor="brown"> Thursday </th>
+<td> MODE</td>
+<td> CP</td>
+<td> CP</td>
+<td> PHY </td>
+<td> MODE</td>
+<td> EIT</td>
+<td> CS-I</td>
+<td> TAMIL</td>
+</tr>
+
+<tr>
+<th bgcolor="brown">Friday </th>
+<td> CS-I</td>
+<td> EIT</td>
+<td colspan="2">CP</td>
+<td colspan="2">PHY</td>
+<td colspan="2">MATH LAB</td>
+</tr>
+
+<tr>
+<th bgcolor="brown"> Saturday </th>
+<td> MODE</td>
+<td> CS-I</td>
+<td> CP</td>
+<td> PHY </td>
+<td> EIT</td>
+<td> TAMIL</td>
+<td> SPD</td>
+<td> PED</td>
+</tr>
+</p>
+</body>
+</html>
+
 
 
